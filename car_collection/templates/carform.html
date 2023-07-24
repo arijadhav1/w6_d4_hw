@@ -1,0 +1,44 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+    <fieldset class="'make-field">
+        {{ form.make.label }}
+        {{ form.make(class='form-control', placeholder='Name') }}
+    </fieldset>
+    <fieldset class="'model-field">
+        {{ form.model.label }}
+        {{ form.model(class='form-control', placeholder='Model') }}
+    </fieldset>
+    <fieldset class="'year-field">
+        {{ form.year.label }}
+        {{ form.year(class='form-control', placeholder='Year') }}
+    </fieldset>
+    <fieldset class="'color-field">
+        {{ form.color.label }}
+        {{ form.color(class='form-control', placeholder='Color') }}
+    </fieldset>
+    <fieldset class="'description-field">
+        {{ form.description.label }}
+        {{ form.description(class='form-control', placeholder='Description') }}
+    </fieldset>
+    <fieldset class="'price-field">
+        {{ form.price.label }}
+        {{ form.price(class='form-control', placeholder='Price') }}
+    </fieldset>
+    <fieldset class="'mpg-field">
+        {{ form.miles_per_gallon.label }}
+        {{ form.miles_per_gallon(class='form-control', placeholder='Miles Per Gallon') }}
+    </fieldset>
+    <fieldset class="'speed-field">
+        {{ form.max_speed.label }}
+        {{ form.max_speed(class='form-control', placeholder='max_speed') }}
+    </fieldset>
+    <fieldset class="'seats-field">
+        {{ form.seats.label }}
+        {{ form.seats(class='form-control', placeholder='Seats') }}
+    </fieldset>
+
+    {{ form.submit_button(class='btn btn-primary btn-block mt-2')}}
+
+</div>
+</form>
